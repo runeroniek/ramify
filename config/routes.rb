@@ -1,5 +1,7 @@
 Ramify::Application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   filter :locale
   
   ActiveAdmin.routes(self)
