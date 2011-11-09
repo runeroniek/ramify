@@ -25,7 +25,7 @@ gem "auto_html", '>= 1.3.5'
 gem "acts_as_commentable"
 gem 'routing-filter'
 gem 'http_accept_language'
-gem "autotest", "~> 4.4.6"
+#gem "autotest", "~> 4.4.6"
 gem 'activeadmin'
 gem "mustache"
 gem 'kaminari'
