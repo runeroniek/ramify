@@ -3,6 +3,8 @@ source 'http://gems.github.com'
 
 gem 'rails', '3.0.9'
 
+
+gem 'heroku'
 gem 'unicorn'
 gem 'slim'
 
@@ -14,7 +16,8 @@ gem 'slim'
 	gem "oa-oauth", :require => "omniauth/oauth"
 	gem 'oa-openid', :require => 'omniauth/openid'
 	gem 'cancan'
-	
+
+gem 'pg'
 gem 'inherited_resources'
 gem 'maxim-sexy_pg_constraints'
 gem 'spectator-validates_email', :require => 'validates_email'
@@ -38,11 +41,9 @@ gem 'thin'
 group :production do
   gem 'fog'
   gem 'dalli'
-	gem 'pg'
 end
 
 group :test, :development do
-	gem 'sqlite3'
   gem 'launchy'
   gem 'database_cleaner'
   gem 'steak', "~> 2.0.0"
